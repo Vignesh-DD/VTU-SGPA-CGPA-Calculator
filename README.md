@@ -33,6 +33,6 @@ This project is designed for VTU MCA students (2024 Scheme) to simplify academic
 **Predict the required SGPA in future semesters to achieve a target CGPA**
 
 ## Live Demo
-- [Click Here..]([https://vignesh-dd.github.io/VTU-SGPA-CGPA-Calculator/])
+- [Click Here..](https://vignesh-dd.github.io/VTU-SGPA-CGPA-Calculator/)
 
 
