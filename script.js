@@ -42,7 +42,7 @@ function showSemesterSubjects() {
             <td>${course.name}</td>
             <td>${course.credits}</td>
             <td>
-                <input  class="grade" id="mark" name="marks1" placeholder="Enter the Marks" data-credits="${course.credits}">
+                <input type="number" class="grade" id="mark" name="marks1" placeholder="Enter the Marks" data-credits="${course.credits}" required>
             </td>
         `;
         table.appendChild(row);

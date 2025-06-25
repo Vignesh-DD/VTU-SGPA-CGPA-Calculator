@@ -255,8 +255,9 @@ table td {
 
 @media (max-width: 480px) {
     .container {
-        width: 100%;
+        /* width: 100%; */
         padding: 10px;
+        /* margin-right: 200px; */
     }
     h2 {
         font-size: 1.2em;
