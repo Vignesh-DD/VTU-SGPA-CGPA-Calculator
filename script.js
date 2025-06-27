@@ -90,13 +90,13 @@ function calculateSGPA() {
             let gradePoint;
             if (gradeValue >= 90)
                 gradePoint = 10
-            else if (gradeValue >= 80 && gradeValue < 89)
+            else if (gradeValue >= 80 && gradeValue <= 89)
                 gradePoint = 9
-            else if (gradeValue >= 70 && gradeValue < 79)
+            else if (gradeValue >= 70 && gradeValue <= 79)
                 gradePoint = 8
-            else if (gradeValue >= 60 && gradeValue < 69)
+            else if (gradeValue >= 60 && gradeValue <= 69)
                 gradePoint = 7
-            else if (gradeValue >= 50 && gradeValue < 54)
+            else if (gradeValue >= 50 && gradeValue <= 54)
                 gradePoint = 6
             else
                 gradePoint = 5
