@@ -88,7 +88,7 @@ function calculateSGPA() {
         }
         else {
             let gradePoint;
-            if (gradeValue >= 90)
+            if (gradeValue >= 90 && gradeValue <=100)
                 gradePoint = 10
             else if (gradeValue >= 80 && gradeValue <= 89)
                 gradePoint = 9
@@ -96,10 +96,12 @@ function calculateSGPA() {
                 gradePoint = 8
             else if (gradeValue >= 60 && gradeValue <= 69)
                 gradePoint = 7
-            else if (gradeValue >= 50 && gradeValue <= 54)
+            else if (gradeValue >= 55 && gradeValue <= 59)
                 gradePoint = 6
-            else
+            else if (gradeValue >= 50 && gradeValue <= 54)
                 gradePoint = 5
+            else
+                gradePoint = 0
 
             //  gradepoint= gradePoints[gradeValue];
             weightedSum += gradePoint * credits;
