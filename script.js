@@ -96,7 +96,7 @@ function calculateSGPA() {
                 gradePoint = 8
             else if (gradeValue >= 60 && gradeValue <= 69)
                 gradePoint = 7
-            else if (gradeValue >= 54 && gradeValue <= 59)
+            else if (gradeValue >= 55 && gradeValue <= 59)
                 gradePoint = 6
             else
                 gradePoint = 5
