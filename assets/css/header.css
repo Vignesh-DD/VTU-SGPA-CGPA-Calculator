@@ -1,17 +1,13 @@
-/* body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-} */
-
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 12px;
     background-color: #f1fefe;
-    color: #007BFF;
+    color: #0077b6;
     width: 100%;
     box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 95, 115, 0.08);
 }
 
 .github-icon {
@@ -29,7 +25,6 @@
     height: 60px;
     cursor: pointer;
     border-radius: 50%;
-
 }
 
 .title {
@@ -37,7 +32,8 @@
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
-    color: #007BFF;
+    color: #0077b6;
+    padding: 0 10px;
 }
 
 .logo {
@@ -48,25 +44,32 @@
     align-items: center;
     margin-right: 25px;
 }
-.below-text{
-    color: #007BFF; 
-    margin: 5px;
-    font-size: large;
-    margin-top: 15px;
-}
-.logo img{
+
+.logo img {
     width: 60px;
     height: 60px;
     cursor: pointer;
     border-radius: 50%;
 }
+
+.below-text .scheme-label {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.below-text .scheme-subtext {
+    margin-top: 6px;
+    font-size: 0.95em;
+}
+
 .footer {
     padding: 20px;
     text-align: center;
-    background-color: #007BFF;
+    background-color: #0077b6;
     color: white;
     width: 100%;
     box-sizing: border-box;
+    margin-top: auto;
 }
 
 .footer a {
@@ -82,39 +85,49 @@
 .footer p {
     margin: 5px 0;
 }
+
 @media (max-width: 600px) {
     .header {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center-align items */
-      /* padding: 10px; */
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     .github-icon {
-      margin-right: 0; /* Remove margin to fit better on small screens */
-      margin-top: 10px; /* Add spacing for vertical layout */
-      justify-content: center; /* Center-align GitHub icon */
+        margin-right: 0;
+        margin-top: 10px;
+        justify-content: center;
     }
-  
+
     .title {
-      font-size: 1.2rem; /* Reduce font size for smaller screens */
+        font-size: 1.1rem;
+        margin-top: 8px;
     }
-  
+
     .logo {
-      margin-left: 0; /* Remove left margin for better alignment */
-      margin-bottom: 10px; /* Add bottom margin for spacing */
-      justify-content: center; /* Center-align logo */
-      margin-right: 12px;
+        margin-left: 0;
+        margin-bottom: 10px;
+        justify-content: center;
+        margin-right: 12px;
     }
-  
+
     .logo img {
-      width: 50px; /* Adjust logo size for smaller screens */
-      height: 50px;
-      margin-left: 30px;
-      margin-top: 18px;
+        width: 50px;
+        height: 50px;
+        margin-left: 30px;
+        margin-top: 18px;
     }
-  
+
     .below-text {
-      font-size: medium; /* Adjust text size for readability */
-      text-align: center; /* Center-align text */
+        font-size: medium;
+        text-align: center;
     }
-  }
+}
+
+@media only screen and (min-width: 590px) {
+    .header .logo a img,
+    .header .github-icon a img {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+}

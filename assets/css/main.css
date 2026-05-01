@@ -1,0 +1,370 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #e8fbff 0%, #f6feff 50%, #eef9fb 100%);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.below-text {
+    text-align: center;
+    margin: 10px 0 4px;
+    font-size: 0.95em;
+    color: #005f73;
+    padding: 0 12px;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 0 12px;
+    width: min(100%, 900px);
+    box-sizing: border-box;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 12px 18px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #0f7aa8, #005f73);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    box-shadow: 0 8px 18px rgba(15, 122, 168, 0.18);
+}
+
+.toggle-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 22px rgba(15, 122, 168, 0.24);
+}
+
+.toggle-btn.active {
+    background: linear-gradient(135deg, #0a9a8d, #036666);
+}
+
+.main-container {
+    width: 100%;
+    max-width: 760px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.container {
+    width: 100%;
+    padding: 22px;
+    background-color: #ffffff;
+    box-shadow: 0 16px 35px rgba(2, 48, 71, 0.09);
+    border-radius: 18px;
+    text-align: center;
+    margin-bottom: 22px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 95, 115, 0.08);
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #0077b6;
+    margin-bottom: 14px;
+}
+
+h3 {
+    font-size: 1.15em;
+    margin-bottom: 15px;
+    color: #073b4c;
+}
+
+.form-group {
+    text-align: left;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    border: 1px solid #c7dbe1;
+    border-radius: 10px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+button {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #0077b6, #005f73);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 8px 16px rgba(0, 119, 182, 0.18);
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+.result,
+.sgpareq-result {
+    margin-top: 16px;
+    border-radius: 14px;
+    padding: 16px 18px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.result {
+    font-size: 1.1em;
+    color: #0077b6;
+    font-weight: 700;
+    background: #effbff;
+    border: 1px solid #ccefff;
+}
+
+.results-dashboard {
+    margin-top: 18px;
+    padding: 16px;
+    border-radius: 16px;
+    background: #f7fcff;
+    border: 1px solid #d6eef4;
+    text-align: left;
+}
+
+.results-dashboard h3 {
+    margin: 0 0 12px;
+    color: #005f73;
+    font-size: 1.1em;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.results-card {
+    padding: 12px;
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid #dbe7ee;
+}
+
+.results-card h4 {
+    margin: 0 0 10px;
+    font-size: 1em;
+    color: #073b4c;
+}
+
+.results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 6px;
+}
+
+.results-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95em;
+    color: #355070;
+}
+
+.results-list strong {
+    color: #c1121f;
+    font-weight: 800;
+}
+
+.results-metric {
+    font-size: 1.6em;
+    font-weight: 800;
+    color: #c1121f;
+    margin-bottom: 8px;
+}
+
+.results-sub {
+    font-size: 0.95em;
+    color: #355070;
+}
+
+.results-sub span {
+    color: #c1121f;
+    font-weight: 700;
+}
+
+.sgpareq-result span {
+    display: inline-block;
+    margin-left: 6px;
+    color: #c1121f;
+    font-size: 1.25em;
+    font-weight: 800;
+}
+
+.semester-summary {
+    margin-top: 16px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f0fbff, #e0f7fa);
+    color: #005f73;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #d1edf2;
+}
+
+.semester-summary strong {
+    color: #c1121f;
+}
+
+.semester-summary .scheme-focus {
+    margin-top: 6px;
+    font-size: 0.92em;
+    font-weight: 500;
+}
+
+#semesters {
+    margin-top: 8px;
+}
+
+.grade-table {
+    margin-top: 18px;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.grade-table th,
+.grade-table td {
+    padding: 10px;
+    border: 1px solid #dde9ee;
+    font-size: 0.9em;
+    vertical-align: top;
+}
+
+.grade-table th {
+    background-color: #0077b6;
+    color: white;
+}
+
+table td {
+    font-size: 0.85em;
+    padding: 9px;
+    border-bottom: 1px solid #ddd;
+}
+
+input.grade {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 14px;
+}
+
+.elective-label {
+    font-weight: 600;
+    color: #073b4c;
+    margin-bottom: 6px;
+}
+
+.passfail-select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #cfd8dc;
+    background: #fff;
+    font-size: 0.9em;
+    box-sizing: border-box;
+}
+
+input.grade:focus {
+    outline: none;
+    border-color: #0077b6;
+    box-shadow: 0 0 0 2px rgba(0, 119, 182, 0.18);
+}
+
+.sgpareq-result {
+    background: linear-gradient(135deg, #e0f7fa, #f0fbff);
+    border: 1px solid #d1edf2;
+    color: #00796b;
+    font-weight: 700;
+}
+
+.sgpareq-result span {
+    color: #c1121f;
+    font-size: 1.4em;
+    font-weight: 800;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 14px;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    h2 {
+        font-size: 1.35em;
+    }
+
+    h3 {
+        font-size: 1.05em;
+    }
+
+    .toggle-container {
+        flex-direction: column;
+    }
+
+    .toggle-btn {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    input,
+    select,
+    button {
+        font-size: 0.92em;
+    }
+
+}
